@@ -21,3 +21,4 @@ set HTTP_PORT=3003 && set P2P_PORT=5003 && set PEERS=ws://localhost:5001,ws://lo
 https://github.com/15Dkatz/sf-chain-guides
 
 npm i elliptic --save
+npm i uuid --save
