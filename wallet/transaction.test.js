@@ -8,7 +8,7 @@ describe('Transaction', () => {
     beforeEach(() => {
         wallet = new Wallet();
         amount = 50;
-        recipient = 'r3cip13nt';
+        recipient = 'r3c1p13nt';
         transaction = Transaction.newTransaction(wallet, recipient, amount);
     });
 
@@ -69,6 +69,7 @@ describe('Transaction', () => {
     
         it(`reward the miner's wallet`, () => {
           expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount).toEqual(MINING_REWARD);
+
         });
       });
 });
